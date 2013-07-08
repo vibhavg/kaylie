@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#home {
+/*	margin:0;
+	padding:0;*/
+}
+
+#home_images {
+	list-style-type:none;
+	width:450px;
+	/*top:-63px;
+	left:0px;*/
+	padding:0;
+	margin-top:202px;
+	margin-left:156px;
+}
+
+#home_images li {
+	float:left;
+	padding:0;	
+	margin:0;
+}
+
+#home_images a {
+	display:block;
+	width:150px;
+	height:150px;
+	text-decoration:none;
+	text-indent:-1000em;
+}
+
+.home_sprites {
+	cursor:pointer;
+	width:150px;
+	height:150px;
+	float:left;	
+}
+
+.sixth {
+	background:url(../images/home-sprite.jpg) no-repeat;
+}
+
+.seventh {
+	background:url(../images/home-sprite.jpg) no-repeat -150px 0;	
+}
+
+.eigth {
+	background:url(../images/home-sprite.jpg) no-repeat -300px 0;
+}
+
+.ninth {
+	background:url(../images/home-sprite.jpg) no-repeat 0px -150px;
+}
+
+.tenth {
+	background:url(../images/home-sprite.jpg) no-repeat -150px -150px;
+}
+
+.eleventh {
+	background:url(../images/home-sprite.jpg) no-repeat -300px -150px;
+}
+
+
+
+.sixth:hover {
+	background:url(../images/sprite-rollover.jpg) no-repeat;
+}
+
+.seventh:hover {
+	background:url(../images/sprite-rollover.jpg) no-repeat -150px 0;	
+}
+
+.eigth:hover {
+	background:url(../images/sprite-rollover.jpg) no-repeat -300px 0;
+}
+
+.ninth:hover {
+	background:url(../images/sprite-rollover.jpg) no-repeat 0 -150px;
+}
+
+.tenth:hover {
+	background:url(../images/sprite-rollover.jpg) no-repeat -150px -150px;
+}
+
+.eleventh:hover {
+	background:url(../images/sprite-rollover.jpg) no-repeat -300px -150px;
+}
