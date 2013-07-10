@@ -34,36 +34,37 @@ p.welcome{
 }
 
 #globalnav{
-        left:5px;
+        left:10px;
         top:0px;
         position:fixed;
         list-style-type:none;
         margin:126px 0;
-        
 }
 
 .submenu {
-  left: -15px;
+  left: -10px;
   position: relative;
   list-style-type: none;
 }
 
 #globalnav li a{
         display:block;
-        width:106px;            
-        margin-left:-26px;
+        width:106px;
+        margin-left:0px;
         height:22px;
         font-family:'Open Sans', sans-serif;
         font-weight:300;
+        font-size:20px;
         color:#999;
         text-decoration:none;
         text-transform:uppercase;
         padding-right:6px;
-        }
-        
-#globalnav li{
         margin-bottom:10px;
+}
+        
+#globalnav>li{
         text-align: right;
+        margin-bottom:15px;
 }
 
 #globalnav a:hover{
@@ -73,6 +74,20 @@ p.welcome{
 
 #globalnav a.selected{
         text-decoration:none;
+}
+
+#globalnav ul {
+  display:none;
+  margin-top:10px;
+}
+
+#globalnav ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-style:italic;
+  text-transform:lowercase;
+  font-weight:300;
+  margin-right: 5px;
+  margin-bottom: 2px;
 }
 
 p{font-family: 'Open Sans', sans-serif;
