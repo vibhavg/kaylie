@@ -38,17 +38,6 @@ var jump=function(e) {
 
 }
 
-$(document).ready(function()
-{
-       $('a.jump').bind("click", jump);
-
-       $("li.expander").click(function(event){
-            event.preventDefault();
-            $(this).find("li").toggle();
-       });
-       return false;
-});
-
 function send_to(location,new_tab) {
         if(!new_tab)
                 window.location = location;     
@@ -69,20 +58,21 @@ function send_to(location,new_tab) {
     <!-- navigation bar on the left -->
     <div id="navbar">
       <ul id="globalnav">
-        <li class="expander">
-          <a class="first jump" onclick="applySelectedTo(this);" href="#packaging" name="packaging">packaging</a>
-          <ul class="expandabletab" id="packaging-tab">
+        <li>
+          <a href="#packaging">packaging</a>
+          <ul class="submenu">
             <li>looza</li>
           </ul>
         </li>    
-        <li><a class="second jump" onclick="applySelectedTo(this);" href="#publication">publication</a></li>
-        <li><a class="third jump" onclick="applySelectedTo(this);" href="#poster">poster</a></li>
-        <li><a class="fourth jump" onclick="applySelectedTo(this);" href="#about">about</a></li>
-        <li><a class="fifth jump" onclick="applySelectedTo(this);" href="#contact">contact</a></li>
+        <li><a href="#publication">publication</a></li>
+        <li><a href="#poster">poster</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
     </div>
 
     <!-- home page - picture tiles -->
+    <!-- this still needs to be cleaned up big time - no js in here -->
     <div id="home">
       <div id="tiled-main">
         <a href="#" onmouseover="$('#looza').attr('src', 'images/small/looza-bottles.jpg')"

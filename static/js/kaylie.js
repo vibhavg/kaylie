@@ -1,9 +1,16 @@
-$(document).ready() {
+$(document).ready(function() {
     $('#globalnav a').click(function() {
-        if (this.attr('class') == 'selected') {
-            this.attr('class', '');
-	} else {
-	    this.attr('class', 'selected');
-	}
+        $this = $(this);
+        if ($this.hasClass('selected')) {
+            $this.removeClass('selected');
+            $submenu = $this.parent('li').children('ul');
+            if ($submenu)
+                $submenu.slideUp();
+        } else {
+            $this.addClass('selected');
+            $submenu = $this.parent('li').children('ul');
+            if ($submenu)
+                $submenu.slideDown();
+        }
     });
-}
+});
