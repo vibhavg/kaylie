@@ -18,39 +18,31 @@ h2 {
   margin-bottom: -15px;
 }
 
+a {
+  cursor: pointer;
+}
+
 #header {
   top: 5px;
   left: 5px;
-  padding-top: 15px;
-  padding-left: 150px;
-  position: fixed;
-  z-index: 5000;
+  padding-top: 35px;
+  padding-left: 155px;
 }
 
-p.welcome {
-  color: #A9598B;
-  margin: 10px 5px 0;
-  font-family: 'Open Sans', sans-serif;
+#header img {
+  width:650px;
 }
 
 #globalnav {
-  left: 10px;
-  top: 0px;
-  position: fixed;
   list-style-type: none;
-   margin: 126px 0;
 }
 
 .submenu {
-  left: -10px;
-  position: relative;
   list-style-type: none;
 }
 
 #globalnav li a {
   display:block;
-  width:106px;
-  margin-left:0px;
   height:22px;
   font-family:'Open Sans', sans-serif;
   font-weight:300;
@@ -58,13 +50,12 @@ p.welcome {
   color:#999;
   text-decoration:none;
   text-transform:uppercase;
-  padding-right:6px;
-  margin-bottom:10px;
 }
-        
+
 #globalnav>li {
   text-align: right;
-  margin-bottom:15px;
+  margin-bottom: 25px;
+  padding-right: 5px;
 }
 
 #globalnav a:hover {
@@ -78,7 +69,9 @@ p.welcome {
 
 #globalnav ul {
   display:none;
-  margin-top:10px;
+  margin: 5px 0 0 0;
+  width: 135px;
+  padding-right: 5px;
 }
 
 #globalnav ul li {
@@ -86,8 +79,23 @@ p.welcome {
   font-style:italic;
   text-transform:lowercase;
   font-weight:300;
-  margin-right: 5px;
   margin-bottom: 2px;
+}
+
+.tile-row {
+  width: 100%;
+  height: 170px;
+  margin-bottom: 10px;
+}
+
+.tile-span {
+  width: 18%;
+  margin-left: 10px !important;
+}
+
+.tile-row img {
+  max-width: 155px;
+  max-height: 155px;
 }
 
 p {
@@ -97,24 +105,6 @@ p {
   font-size:12px;
   color:#333;
 }
-
-#home {
-        margin-left:150px;
-        margin-top:125px;
-}       
-
-/*#home{
-        padding-left:110px;
-        padding-top:115px;
-        width:490px;
-        height:300px;
-}
-
-#home_images li{
-        float:left;
-        list-style:none;
-        height:150px;
-}*/
 
 #publication{
         margin-top:600px;
@@ -179,16 +169,12 @@ p {
         color:#666;
 }
 
-/*.one-slide_caption {
-        max-width:449px;        
-}*/
-
 #resume{
         cursor:pointer;
         text-decoration:none;
         color:#A9598B;
         font-family:'Open Sans', sans-serif;
-        font-weight:800;
+        Font-Weight:800;
         font-size:10.5px;
         margin:0px;
         margin-left:0px;
@@ -203,21 +189,4 @@ p {
         left:163px;
         top:787px;
         margin:0px !important;  
-}
-
-
-.image-tile-div{
-        overflow: hidden;
-        float: left;
-        height: 200px;
-        width: 200px;
-
-}
-.image-tile{
-        padding: 10px 0px 10px 10px;
-    height: 200px;
-}
-
-.tiled-main{
-        width: 100%;
 }
