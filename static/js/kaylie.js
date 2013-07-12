@@ -27,4 +27,6 @@ $(document).ready(function() {
         var new_src = src.replace('small', 'bw');
         $this.attr('src', new_src);
     });
+
+    
 });
