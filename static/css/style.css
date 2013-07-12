@@ -41,12 +41,12 @@ a {
   list-style-type: none;
 }
 
-#globalnav li a {
+#globalnav li>a {
   display:block;
   height:22px;
   font-family:'Open Sans', sans-serif;
   font-weight:300;
-  font-size:20px;
+  font-size:19px;
   color:#999;
   text-decoration:none;
   text-transform:uppercase;
@@ -65,6 +65,10 @@ a {
 
 #globalnav a.selected {
   text-decoration:none;
+  background-image: url('../../images/underline.png');
+  padding-bottom: 10px;
+  background-position: 26px -2px;
+  background-repeat: no-repeat;
 }
 
 #globalnav ul {
@@ -74,12 +78,14 @@ a {
   padding-right: 5px;
 }
 
-#globalnav ul li {
+#globalnav ul li a {
   font-family: 'Open Sans', sans-serif;
   font-style:italic;
   text-transform:lowercase;
   font-weight:300;
   margin-bottom: 2px;
+  font-size: 17px;
+  color: black;
 }
 
 .tile-row {
@@ -161,6 +167,27 @@ p {
         margin:0 5px;
         text-decoration:none;
 }
+
+
+/* Carousel CSS Extras */
+
+.project-display{
+	display: none;
+}
+
+.carousel-inner {
+	background-color: black;
+}
+
+.carousel-inner div {
+}
+
+.carousel-inner img {
+	max-height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 .caption_title {
         font-family:'Open Sans', sans-serif;
