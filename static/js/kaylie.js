@@ -39,4 +39,12 @@ $(document).ready(function() {
         $project.fadeIn();
         $project.attr('display', 'true');
     });
+
+    $('[value=home]').click(function() {
+        var linked = $('#globalnav .selected');
+        linked.removeClass('selected');
+        $submenu = linked.parent('li').children('ul');
+        if ($submenu)
+            $submenu.slideUp();
+    });
 });

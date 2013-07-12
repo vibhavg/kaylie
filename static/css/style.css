@@ -91,9 +91,19 @@ a {
 }
 
 .carousel-control {
-  top: 50% !important;
+  top: 45% !important;
   background: none !important;
   border: none !important;
+}
+
+.carousel-inner img {
+}
+
+.project-right-bar {
+  float: left;
+  width: 50px;
+  height: 560px;
+  background: black;
 }
 
 #home {

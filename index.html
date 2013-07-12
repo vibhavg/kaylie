@@ -31,6 +31,7 @@
         <ul class="submenu">
           <li><a id="project-link" value="packaging-looza">looza</a></li>
           <li><a id="project-link" value="packaging-paper-tree">paper tree</a></li>
+          <li><a id="project-link" value="packaging-beethoven-cd">Beethoven CD Cover</a></li>
         </ul>
       </li>
       <li><a>print</a></li>
@@ -45,7 +46,7 @@
     <div id="home" display="true">
       <div class="tile-row">
         <div class="tile-span">
-          <a>
+          <a id="project-link" value="packaging-looza">
             <img src="images/bw/looza-bottles.jpg" id="img-looza" class="image-tile"/>
           </a>
         </div>
@@ -55,7 +56,7 @@
           </a>
         </div>
         <div class="tile-span">
-          <a>
+          <a id="project-link" value="packaging-beethoven-cd">
             <img src="images/bw/beethoven-cd-cover.jpg" id="img-beethoven" class="image-tile"/>
           </a>
         </div>
@@ -127,8 +128,17 @@
     </div>
     <!-- End of HomePage tiles -->
 
-    <!-- Carousel Feature -->
+    
+
+    <!-- Project Looza -->
     <div id="packaging-looza" class="project-display span10" display="false">
+      <div class="static"> 
+        <img src="images/looza-bottles.jpg" alt="piece1"/> 
+      </div>
+    </div>
+    
+    <!-- Project Beethoven -->
+    <div id="packaging-beethoven-cd" class="project-display span10" display="false">
       <div id="myCarousel" class="carousel slide">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -136,16 +146,23 @@
           <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
            
-        <!-- Carousel Items -->
         <div class="carousel-inner">
-          <div class="active item"> <img src="images/looza-bottles.jpg" alt="piece1"/> </div>
+          <div class="active item"> <img src="images/beethoven-back.jpg" alt="piece1"/> </div>
           <div class="item"> <img src="images/beethoven-cd-cover.jpg" alt="piece2"/> </div>
           <div class="item"> <img src="images/beethoven-inside2.jpg" alt="piece3"/> </div>
+          <div class="item"> <img src="images/beethoven-inside3.jpg" alt="piece4"/> </div>
+          <div class="item"> <img src="images/beethoven-front.jpg" alt="piece5"/> </div>
         </div>
 
-        <!-- Carousel nav -->
         <a class="carousel-control left" href="#myCarousel" data-slide="prev"> <img src="images/left-arrow.png"/></a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next"> <img src="images/right-arrow.png"/></a>
+        </div>
+        <div class="project-right-bar">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
       </div>
     </div>
   </body>
