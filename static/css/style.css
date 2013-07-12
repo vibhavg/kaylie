@@ -25,12 +25,14 @@ a {
 #header {
   top: 5px;
   left: 5px;
-  padding-top: 35px;
-  padding-left: 155px;
+  padding-top: 5px;
+  padding-left: 160px;
+  
 }
 
 #header img {
-  width:650px;
+  width: 720px;
+  max-width: 720px;
 }
 
 #globalnav {
@@ -54,7 +56,7 @@ a {
 
 #globalnav>li {
   text-align: right;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding-right: 5px;
 }
 
@@ -94,20 +96,26 @@ a {
   border: none !important;
 }
 
+#home {
+  position: absolute;
+  left: 150px;
+  width: 950px;
+  margin-left: 10px;
+}
+
 .tile-row {
   width: 100%;
-  height: 170px;
-  margin-bottom: 10px;
+  height: 190px;
 }
 
 .tile-span {
-  width: 18%;
+  width: 180px;
   margin-left: 10px !important;
 }
 
 .tile-row img {
-  max-width: 155px;
-  max-height: 155px;
+  max-width: 180px;
+  max-height: 180px;
 }
 
 p {
