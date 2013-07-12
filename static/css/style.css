@@ -88,6 +88,12 @@ a {
   color: black;
 }
 
+.carousel-control {
+  top: 50% !important;
+  background: none !important;
+  border: none !important;
+}
+
 .tile-row {
   width: 100%;
   height: 170px;
