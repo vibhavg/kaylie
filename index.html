@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
 
     <script type="text/javascript" src="static/js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.js"></script>
     <script type="text/javascript" src="static/js/kaylie.js"></script>
 
   </head>
@@ -18,7 +18,7 @@
   <body>
     <!-- header image of the website -->
     <div id="header">
-      <a href="index.html">
+      <a id="project-link" value="home">
         <img src="images/kaylie-allen.png">
       </a>
     </div>
@@ -29,8 +29,8 @@
       <li>
         <a>packaging</a>
         <ul class="submenu">
-          <li><a>looza</a></li>
-          <li><a>paper tree</a></li>
+          <li><a id="project-link" value="packaging-looza">looza</a></li>
+          <li><a id="project-link" value="packaging-paper-tree">paper tree</a></li>
         </ul>
       </li>
       <li><a>print</a></li>
@@ -42,60 +42,56 @@
     </ul>
 
     <!-- home page - picture tiles -->
-    <div id="home" class="span11">
+    <div id="home" class="span11" display="true">
       <div id="tiled-main" class="tile-row">
         <div class="tile-span">
           <a>
-            <img src="images/bw/looza-bottles.jpg" id="looza" class="image-tile"/>
+            <img src="images/bw/looza-bottles.jpg" id="img-looza" class="image-tile"/>
           </a>
         </div>
         <div class="tile-span">
           <a>
-            <img src="images/bw/t9.jpg" id="t9" class="img-rounded image-tile"/>
+            <img src="images/bw/t9.jpg" id="img-t9" class="img-rounded image-tile"/>
           </a>
         </div>
         <div class="tile-span">
           <a>
-            <img src="images/bw/beethoven-cd-cover.jpg" id="beethoven" class="image-tile"/>
+            <img src="images/bw/beethoven-cd-cover.jpg" id="img-beethoven" class="image-tile"/>
           </a>
         </div>
         <div class="tile-span">
           <a>
-            <img src="images/bw/t9.jpg" id="t9" class="img-rounded image-tile"/>
+            <img src="images/bw/t9.jpg" id="img-t9" class="img-rounded image-tile"/>
           </a>
         </div>
         <div class="tile-span">
           <a>
-            <img src="images/bw/t9.jpg" id="t9" class="img-rounded image-tile"/>
+            <img src="images/bw/t9.jpg" id="img-t9" class="img-rounded image-tile"/>
           </a>
         </div>
       </div>
-	  </div>
+    </div>
     <!-- End of HomePage tiles -->
 
-	<!-- Carousel Feature -->
-	<div id="looza" class="project-display">
-	  <div id="myCarousel" class="carousel slide">
-		<ol class="carousel-indicators">
-		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	      <li data-target="#myCarousel" data-slide-to="1"></li>
-	      <li data-target="#myCarousel" data-slide-to="2"></li>
-	   </ol>
-	   
-	   <!-- Carousel Items -->
-	   <div class="carousel-inner">
-	     <div class="active item"> <img src="images/looza-bottles.jpg" alt="piece1"/> </div>
-		 <div class="item"> <img src="images/beethoven-cd-cover.jpg" alt="piece2"/> </div>
-		 <div class="item"> <img src="images/beethoven-inside2.jpg" alt="piece3"/> </div>
+    <!-- Carousel Feature -->
+    <div id="packaging-looza" class="project-display span10" display="false">
+      <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+           
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+        <div class="active item"> <img src="images/looza-bottles.jpg" alt="piece1"/> </div>
+        <div class="item"> <img src="images/beethoven-cd-cover.jpg" alt="piece2"/> </div>
+        <div class="item"> <img src="images/beethoven-inside2.jpg" alt="piece3"/> </div>
 
-	   <!-- Carousel nav -->
-	   <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-	   <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-	   </div>
-	  </div>
-	<div>
-
-    <!-- End of Carousel -->
-  
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div>
+    </div>
   </body>
 </html>

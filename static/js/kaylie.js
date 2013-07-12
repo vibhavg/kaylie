@@ -11,7 +11,7 @@ $(document).ready(function() {
             $this.addClass('selected');
             if ($submenu)
                 $submenu.slideDown();
-	    }
+            }
     });
 
     $('.tile-span img').mouseover(function() {
@@ -26,5 +26,15 @@ $(document).ready(function() {
         var src = $this.attr('src');
         var new_src = src.replace('small', 'bw');
         $this.attr('src', new_src);
+    });
+
+    $('a#project-link').click(function() {
+        $('[display=true]').css('display', 'none');
+        $('[display=true]').attr('display', 'false');
+        $this = $(this);
+        var project = $this.attr('value');
+        $project = $('#'+project);
+        $project.fadeIn();
+        $project.attr('display', 'true');
     });
 });
