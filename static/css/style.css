@@ -41,7 +41,7 @@ a {
   list-style-type: none;
 }
 
-#globalnav li>a {
+#globalnav > li > a {
   display:block;
   height:22px;
   font-family:'Open Sans', sans-serif;
@@ -112,88 +112,25 @@ p {
   color:#333;
 }
 
-#publication{
-        margin-top:600px;
-        padding-left:150px;
-        padding-top:25px;
-}
-
-#packaging{
-        margin-top:600px;
-        padding-left:150px;
-        padding-top:25px;
-}
-
-#poster{
-        margin-top:600px;
-        padding-left:150px;
-        padding-top:25px;
-}
-
-#about{
-        margin-top:600px;
-        padding-left:154px;
-        padding-top:127px;
-}
-
-#contact{
-        margin-top:600px;
-        padding-left:150px;
-        padding-top:127px;
-        margin-bottom:600px;
-}
-
-.home_link{
-        display:block;
-        margin-top:20px;
-        font-family:'Open Sans', san-serif;
-        color:#666;
-        text-decoration:none;
-        font-size:11px;
-        text-transform:uppercase;
-        font-weight:300;        
-}
-
-.home_link:hover{
-        text-decoration:none;
-        color:#CCC;
-}
-
-#home_link_title {
-        font-family: 'Open Sans', sans-serif;
-        font-weight:800;
-        font-size:1.0em;
-        color:#A9598B; 
-        margin:0 5px;
-        text-decoration:none;
-}
-
-
-/* Carousel CSS Extras */
-
-.project-display{
-	display: none;
+.project-display {
+  display: none;
+  margin-left: 10px;
+  height: 560px;
 }
 
 .carousel-inner {
-	background-color: black;
+  position: relative;
+  height: 560px;
+  overflow: hidden;
 }
 
-.carousel-inner div {
-}
-
-.carousel-inner img {
-	max-height: 500px;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 
 .caption_title {
-        font-family:'Open Sans', sans-serif;
-        font-weight:800;        
-        font-size:10.5px;
-        color:#666;
+  font-family:'Open Sans', sans-serif;
+  font-weight:800;        
+  font-size:10.5px;
+  color:#666;
 }
 
 #resume{

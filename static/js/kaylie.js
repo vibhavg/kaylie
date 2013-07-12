@@ -11,7 +11,7 @@ $(document).ready(function() {
             $this.addClass('selected');
             if ($submenu)
                 $submenu.slideDown();
-	    }
+            }
     });
 
     $('.tile-span img').mouseover(function() {
@@ -28,5 +28,15 @@ $(document).ready(function() {
         $this.attr('src', new_src);
     });
 
-    
+    $('a#project-link').click(function() {
+        $('a#project-link').css('font-weight',300);
+        $('[display=true]').css('display', 'none');
+        $('[display=true]').attr('display', 'false');
+        $this = $(this);
+        $this.css('font-weight', '600');
+        var project = $this.attr('value');
+        $project = $('#'+project);
+        $project.fadeIn();
+        $project.attr('display', 'true');
+    });
 });
