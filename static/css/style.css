@@ -30,6 +30,14 @@ a {
   
 }
 
+#header a {
+    opacity: 1;
+}
+
+#header a:hover {
+    opacity: .4;
+}
+
 #header img {
   width: 720px;
   max-width: 720px;
@@ -62,21 +70,19 @@ a {
 
 #globalnav a:hover {
   text-decoration:none;
-  color:rgb(90,90,90);
+  color:rgb(180,180,180);
 }
 
 #globalnav a.selected {
   text-decoration:none;
   background-image: url('../../images/underline.png');
   padding-bottom: 10px;
-  background-position: 26px -2px;
+  background-position: 1px -2px;
   background-repeat: no-repeat;
 }
 
 #globalnav ul {
   display:none;
-  margin: 5px 0 0 0;
-  width: 135px;
   padding-right: 5px;
 }
 
@@ -86,7 +92,7 @@ a {
   text-transform:lowercase;
   font-weight:300;
   margin-bottom: 2px;
-  font-size: 17px;
+  font-size: 15px;
   color: black;
 }
 
@@ -94,24 +100,46 @@ a {
   top: 45% !important;
   background: none !important;
   border: none !important;
+  width: 50px !important;
+  height: 200px; 
 }
 
-.carousel-inner img {
+a.carousel-control {
+    opacity: 0;
+}
+
+a:hover.carousel-control {
+    opacity: .9;
+}
+
+.carousel-indicators li{
+  float: none !important;
+  width: 55px !important;
+  height: 55px !important;
+  margin-bottom: 1px !important;
+}
+
+.carousel-indicators{
+    top: 0px !important;
+    right: -75px !important;
+}
+
+.carousel-indicators img{
+  position: absolute;
 }
 
 .project-right-bar {
   float: left;
   width: 50px;
   height: 560px;
-  background: black;
 }
 
-#home {
-  position: absolute;
-  left: 150px;
-  width: 950px;
-  margin-left: 10px;
+.project-right-bar p{
+    position: absolute;
+    bottom: 20px;
+    max-width: 200px;
 }
+
 
 .tile-row {
   width: 100%;
@@ -119,9 +147,11 @@ a {
 }
 
 .tile-span {
-  width: 180px;
+  width: 180px !important;
   margin-left: 10px !important;
 }
+
+
 
 .tile-row img {
   max-width: 180px;
