@@ -1,16 +1,20 @@
 $(document).ready(function() {
     $('#globalnav > li > a').click(function() {
         var linked = $('#globalnav .selected');
+        var $this = $(this);
+        var newLink = linked[0] !== $this[0];
+
         linked.removeClass('selected');
         $submenu = linked.parent('li').children('ul');
         if ($submenu)
             $submenu.slideUp();
 
-        $this = $(this);
-        $submenu = $this.parent('li').children('ul');
-        $this.addClass('selected');
-        if ($submenu)
-            $submenu.slideDown();
+        if (newLink) {
+            $submenu = $this.parent('li').children('ul');
+            $this.addClass('selected');
+            if ($submenu)
+                $submenu.slideDown();
+        }
     });
 
     $('.tile-span img').mouseover(function() {
